@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Inventory Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>IT Inventory Form</h1>
+
+  <form id="inventory-form">
+    <label for="serial">Serial#</label>
+    <input type="text" id="serial" name="serial" required />
+
+    <label for="assetTag">Asset Tag#</label>
+    <input type="text" id="assetTag" name="assetTag" required />
+
+    <label for="device">Device</label>
+    <select id="device" name="device" required>
+      <option value="">—</option>
+      <option>HP ENVY x360 Convertible 15-ed1xxx</option>
+      <option>HP Pavilion x360 Convertible 15-dq1xxx</option>
+      <option>HP 250 G7 Notebook PC</option>
+      <option>HP 470 17 inch G9 Notebook PC</option>
+      <option>HP EliteBook 840 G3</option>
+      <option>HP EliteBook 850 G6</option>
+      <option>HP EliteBook 850 G7 Notebook PC</option>
+      <option>HP EliteBook 850 G8 Notebook PC</option>
+      <option>HP EliteBook 860 16 inch G10 Notebook PC</option>
+      <option>HP EliteBook 840 14 inch G11 Notebook PC</option>
+      <option>HP ProBook 450 G8 Notebook PC</option>
+      <option>HP ProBook 450 15.6 inch G9 Notebook PC</option>
+      <option>HP ZBook Studio 16 inch G9 MobileWorkstation PC</option>
+      <option>HP ZBook Firefly 14 inch G10 MobileWorkstation PC</option>
+      <option>Surface Laptop 5 for Business</option>
+      <option>Surface Laptop 6 for Business</option>
+    </select>
+
+    <label for="make">Make</label>
+    <select id="make" name="make" required>
+      <option value="">—</option>
+      <option>Apple</option>
+      <option>Microsoft</option>
+      <option>Other</option>
+    </select>
+
+    <label for="deploymentDate">Date of Deployment</label>
+    <input type="date" id="deploymentDate" name="deploymentDate" required />
+
+    <label for="campus">Location (Campus)</label>
+    <select id="campus" name="campus" required>
+      <option value="">—</option>
+      <option value="Remote">Remote</option>
+      <option value="CentreTech">CentreTech</option>
+      <option value="Lowry">Lowry</option>
+    </select>
+
+    <label for="building">Building</label>
+    <select id="building" name="building" required>
+      <option value="">—</option>
+    </select>
+
+    <label for="room">Room</label>
+    <select id="room" name="room" required>
+      <option value="">—</option>
+    </select>
+
+    <label for="user">User</label>
+    <input type="text" id="user" name="user" required />
+
+    <label for="techName">Tech Name</label>
+    <input type="text" id="techName" name="techName" required />
+
+    <label for="loanDate">Equipment Loan Date</label>
+    <input type="date" id="loanDate" name="loanDate" />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

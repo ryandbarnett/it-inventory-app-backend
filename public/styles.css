@@ -1,0 +1,83 @@
+/* ===== CCA Brand Colors ===== */
+:root {
+    --cca-red: #9A111F;
+    --cca-black: #231F20;
+    --cca-slate: #66686A;
+    --cca-silver: #D1D2D4;
+    --form-bg: #f9f9f9;
+    --input-border: #ccc;
+    --input-focus: var(--cca-red);
+}
+  
+/* ===== Base Styles ===== */
+body {
+    font-family: Arial, sans-serif; /* CCA uses Myriad Pro, but Arial is fallback */
+    background-color: var(--form-bg);
+    color: var(--cca-black);
+    margin: 0;
+    padding: 2rem;
+}
+  
+h1 {
+    color: var(--cca-red);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+p {
+    color: var(--cca-slate);
+    margin-bottom: 2rem;
+}
+  
+/* ===== Form Styles ===== */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border: 1px solid var(--cca-silver);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+  
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+  
+input:focus,
+select:focus {
+    border-color: var(--input-focus);
+    outline: none;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--cca-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #7c0e1a;
+}
+  
